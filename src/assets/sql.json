@@ -1,0 +1,407 @@
+{
+  "id": 1,
+  "name": "SQL Quiz",
+  "description": "SQL Quiz",
+  "questions": [
+    {
+      "id": 1010,
+      "name": "Which of the following SQL clauses is used to enter data into a SQL table?",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": "INSERT INTO",
+          "isAnswer": true
+      },
+      {
+          "id": 1056,
+          "questionId": 1010,
+          "name": "WRITE",
+          "isAnswer": false
+      },
+      {
+          "id": 1057,
+          "questionId": 1010,
+          "name": "SELECT",
+          "isAnswer": false
+      },
+      {
+          "id": 1058,
+          "questionId": 1010,
+          "name": "ENTER",
+          "isAnswer": false
+      }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+  },
+
+
+
+
+  {
+    "id":1011,
+    "name":"What does the SQL FROM clause do?",
+    "questionTypeId":1,
+    "options":[
+        {
+          "id":1055,
+          "questionId":1010,
+          "name":"Specifies the tables to retrieve rows from.",
+          "isAnswer":true
+        },
+        {
+          "id":1056,
+          "questionId":1010,
+          "name":"Specifies the columns we are retrieving.",
+          "isAnswer":false
+        },
+        {
+          "id":1057,
+          "questionId":1010,
+          "name":"Specifies a search condition.",
+          "isAnswer":false
+        },
+        {
+          "id":1058,
+          "questionId":1010,
+          "name":"Specifies the row and columns both we are retrieving.",
+          "isAnswer":false
+        }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+
+  },
+
+
+
+
+  {
+    "id":1012,
+    "name":"What is the correct order of the '>' and the '=' operators, when we want to specify greater or equal search condition?",
+    "questionTypeId":1,
+    "options":[
+        {
+          "id":1055,
+          "questionId":1010,
+          "name":"=>",
+          "isAnswer":true
+        },
+        {
+          "id":1056,
+          "questionId":1010,
+          "name":"Neither of the other two.",
+          "isAnswer":false
+        },
+        {
+          "id":1057,
+          "questionId":1010,
+          "name":">=",
+          "isAnswer":false
+        },
+        {
+          "id":1058,
+          "questionId":1010,
+          "name":"All of the above",
+          "isAnswer":false
+        }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+
+  },
+
+
+
+
+  {
+    "id":1013,
+    "name":"Which of the following SQL clauses specifies a search condition?",
+    "questionTypeId":1,
+    "options":[
+        {
+          "id":1055,
+          "questionId":1010,
+          "name":"WHERE",
+          "isAnswer":true
+        },
+        {
+          "id":1056,
+          "questionId":1010,
+          "name":"FROM",
+          "isAnswer":false
+        },
+        {
+          "id":1057,
+          "questionId":1010,
+          "name":"WHILE",
+          "isAnswer":false
+        },
+        {
+          "id":1058,
+          "questionId":1010,
+          "name":"SEARCH",
+          "isAnswer":false
+        }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+
+  },
+
+
+
+  {
+    "id":1014,
+    "name":"Which of the following statements gets the total value of the column 'Price' in the 'Sales' table?",
+    "questionTypeId":1,
+    "options":[
+        {
+          "id":1055,
+          "questionId":1010,
+          "name":"SELECT ADD(Price) FROM Sales",
+          "isAnswer":false
+        },
+        {
+          "id":1056,
+          "questionId":1010,
+          "name":"SELECT TOTAL(Price) FROM Sales",
+          "isAnswer":false
+        },
+        {
+          "id":1057,
+          "questionId":1010,
+          "name":"SELECT SUM(Price) WHERE Sales",
+          "isAnswer":false
+        },
+        {
+          "id":1058,
+          "questionId":1010,
+          "name":"SELECT SUM(Price) FROM Sales",
+          "isAnswer":true
+        }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+  },
+
+
+
+
+  {
+    "id":1015,
+    "name":"The JOIN is a SQL keyword used to ...",
+    "questionTypeId":1,
+    "options":[
+        {
+          "id":1055,
+          "questionId":1010,
+          "name":"verify that the inserted data is correct.",
+          "isAnswer":false
+        },
+        {
+          "id":1056,
+          "questionId":1010,
+          "name":"select data from 2 or more tables related by common attribute (table column).",
+          "isAnswer":true
+        },
+        {
+          "id":1057,
+          "questionId":1010,
+          "name":"update database table.",
+          "isAnswer":false
+        },
+        {
+          "id":1058,
+          "questionId":1010,
+          "name":"delete data from database table.",
+          "isAnswer":false
+        }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+
+  },
+
+
+
+
+  {
+    "id":1016,
+    "name":"Which of the following commands is used to delete data froma a SQL database table?",
+    "questionTypeId":1,
+    "options":[
+      {
+        "id":1055,
+        "questionId":1010,
+        "name":"DELETE",
+        "isAnswer":true
+      },
+      {
+        "id":1056,
+        "questionId":1010,
+        "name":"SELECT",
+        "isAnswer":false
+      },
+      {
+        "id":1057,
+        "questionId":1010,
+        "name":"UNION",
+        "isAnswer":false
+      },
+      {
+        "id":1058,
+        "questionId":1010,
+        "name":"INSERT",
+        "isAnswer":false
+      }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+
+  },
+
+
+
+
+  {
+    "id":1017,
+    "questionTypeId":1,
+    "name":"What is a primary key?",
+    "options":[
+      {
+        "id":1055,
+        "questionId":1010,
+        "name":"The primary key is a column or combination of columns whose values uniquely identify each row in the table.",
+        "isAnswer":true
+      },
+      {
+        "id":1056,
+        "questionId":1010,
+        "name":"The primary key is a column that can have NULL values.",
+        "isAnswer":false
+      },
+      {
+        "id":1057,
+        "questionId":1010,
+        "name":"The primary key column is a column or combination of columns whose values can be non-unique.",
+        "isAnswer":false
+      },
+      {
+        "id":1058,
+        "questionId":1010,
+        "name":"All of the above",
+        "isAnswer":false
+      }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+  },
+
+
+
+
+  {
+    "id":1018,
+    "questionTypeId":1,
+    "name":"What does the ALTER TABLE clause do?",
+    "options":[
+      {
+        "id":1055,
+        "questionId":1010,
+        "name":"THE SQL ALTER TABLE deletes data from database table.",
+        "isAnswer":false
+      },
+      {
+        "id":1056,
+        "questionId":1010,
+        "name":"The SQL ALTER TABLE clause is used to delete a database table.",
+        "isAnswer":false
+      },
+      {
+        "id":1057,
+        "questionId":1010,
+        "name":"The SQL ALTER TABLE clause modifies a table definition by altering, adding, or deleting table columns and/or constraints.",
+        "isAnswer":true
+      },
+      {
+        "id":1058,
+        "questionId":1010,
+        "name":"The SQL ALTER TABLE clause is used to insert data into database table.",
+        "isAnswer":false
+      }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+  },
+
+
+
+
+  {
+    "id":1019,
+    "questionTypeId":1,
+    "name":"The table rows are also known as....",
+    "options":[
+      {
+        "id":1055,
+        "questionId":1010,
+        "name":"Fields",
+        "isAnswer":false
+      },
+      {
+        "id":1056,
+        "questionId":1010,
+        "name":"Attributes",
+        "isAnswer":false
+      },
+      {
+        "id":1057,
+        "questionId":1010,
+        "name":"Records",
+        "isAnswer":true
+      },
+      {
+        "id":1058,
+        "questionId":1010,
+        "name":"None of the above",
+        "isAnswer":false
+      }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+  }
+]
+}

@@ -1,0 +1,401 @@
+{
+  "id": 1,
+  "name": "Java Quiz",
+  "description": "Java Quiz",
+  "questions": [
+    {
+      "id": 1010,
+      "name": "Which of the below is not a subinterface of Queue? ",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": "BlockingQueue",
+          "isAnswer": false
+      },
+      {
+          "id": 1056,
+          "questionId": 1010,
+          "name": "BlockingEnque",
+          "isAnswer": true
+      },
+      {
+          "id": 1057,
+          "questionId": 1010,
+          "name": "TransferQueue",
+          "isAnswer": false
+      },
+      {
+          "id": 1058,
+          "questionId": 1010,
+          "name": "BlockingQueue",
+          "isAnswer": false
+      }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+  },
+
+
+
+
+  {
+    "id":1011,
+    "name":"What is the remaining capacity of BlockingQueue whose intrinsic capacity is not defined?",
+    "questionTypeId":1,
+    "options":[
+        {
+          "id":1055,
+          "questionId":1010,
+          "name":"Integer.MAX_VALUE",
+          "isAnswer":true
+        },
+        {
+          "id":1056,
+          "questionId":1010,
+          "name":"BigDecimal.MAX_VALUE",
+          "isAnswer":false
+        },
+        {
+          "id":1057,
+          "questionId":1010,
+          "name":"Integer.INFINITY",
+          "isAnswer":false
+        },
+        {
+          "id":1058,
+          "questionId":1010,
+          "name":"99999999",
+          "isAnswer":false
+        }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+
+  },
+
+
+
+
+  {
+    "id":1012,
+    "name":"PriorityQueue is thread safe.",
+    "questionTypeId":1,
+    "options":[
+        {
+          "id":1055,
+          "questionId":1010,
+          "name":"Yes",
+          "isAnswer":false
+        },
+        {
+          "id":1056,
+          "questionId":1010,
+          "name":"No",
+          "isAnswer":false
+        },
+        {
+          "id":1057,
+          "questionId":1010,
+          "name":"Both",
+          "isAnswer":true
+        },
+        {
+          "id":1058,
+          "questionId":1010,
+          "name":"None of them",
+          "isAnswer":false
+        }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+
+  },
+
+
+
+  {
+    "id":1013,
+    "name":"What is difference between dequeue() and peek() function of java?",
+    "questionTypeId":1,
+    "options":[
+        {
+          "id":1055,
+          "questionId":1010,
+          "name":"dequeue() and peek() remove and return the next time in line",
+          "isAnswer":false
+        },
+        {
+          "id":1056,
+          "questionId":1010,
+          "name":"dequeue() and peek() return the next item in line",
+          "isAnswer":false
+        },
+        {
+          "id":1057,
+          "questionId":1010,
+          "name":"dequeue() removes and returns the next item in line while peek() returns the next item in line",
+          "isAnswer":true
+        },
+        {
+          "id":1058,
+          "questionId":1010,
+          "name":"peek() removes and returns the next item in line while dequeue() returns the next item in line",
+          "isAnswer":false
+        }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+
+  },
+
+
+
+  {
+    "id":1014,
+    "name":"What is the difference between Queue and Stack?",
+    "questionTypeId":1,
+    "options":[
+        {
+          "id":1055,
+          "questionId":1010,
+          "name":"Stack is LIFO; Queue is FIFO",
+          "isAnswer":true
+        },
+        {
+          "id":1056,
+          "questionId":1010,
+          "name":"Queue is LIFO; Stack is FIFO",
+          "isAnswer":false
+        },
+        {
+          "id":1057,
+          "questionId":1010,
+          "name":"Stack and Queue is FIFO",
+          "isAnswer":false
+        },
+        {
+          "id":1058,
+          "questionId":1010,
+          "name":"Stack and Queue is LIFO",
+          "isAnswer":false
+        }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+  },
+
+
+
+  {
+    "id":1015,
+    "name":"What are the use of front and rear pointers in CircularQueue implementation?",
+    "questionTypeId":1,
+    "options":[
+        {
+          "id":1055,
+          "questionId":1010,
+          "name":"Front pointer points to first element; rear pointer points to the last element",
+          "isAnswer":false
+        },
+        {
+          "id":1056,
+          "questionId":1010,
+          "name":" Rear pointer points to first element; front pointer points to the last element",
+          "isAnswer":false
+        },
+        {
+          "id":1057,
+          "questionId":1010,
+          "name":"Front and read pointers point to the first element",
+          "isAnswer":true
+        },
+        {
+          "id":1058,
+          "questionId":1010,
+          "name":"Front pointer points to the first element; rear pointer points to null object",
+          "isAnswer":false
+        }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+
+  },
+
+
+
+  {
+    "id":1016,
+    "name":"What is the correct method used to insert and delete items from the queue?",
+    "questionTypeId":1,
+    "options":[
+      {
+        "id":1055,
+        "questionId":1010,
+        "name":"push and pop",
+        "isAnswer":false
+      },
+      {
+        "id":1056,
+        "questionId":1010,
+        "name":"enqueue and dequeue",
+        "isAnswer":true
+      },
+      {
+        "id":1057,
+        "questionId":1010,
+        "name":"enqueue and peek",
+        "isAnswer":false
+      },
+      {
+        "id":1058,
+        "questionId":1010,
+        "name":"add and remove",
+        "isAnswer":false
+      }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+
+  },
+
+
+
+  {
+    "id":1017,
+    "questionTypeId":1,
+    "name":"Which data structure is used in Breadth First Traversal of a graph?",
+    "options":[
+      {
+        "id":1055,
+        "questionId":1010,
+        "name":"Stack",
+        "isAnswer":false
+      },
+      {
+        "id":1056,
+        "questionId":1010,
+        "name":"Queue",
+        "isAnswer":true
+      },
+      {
+        "id":1057,
+        "questionId":1010,
+        "name":"Array",
+        "isAnswer":false
+      },
+      {
+        "id":1058,
+        "questionId":1010,
+        "name":"Tree",
+        "isAnswer":false
+      }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+  },
+
+
+
+  {
+    "id":1018,
+    "questionTypeId":1,
+    "name":"Where does a new element be inserted in linked list implementation of a queue?",
+    "options":[
+      {
+        "id":1055,
+        "questionId":1010,
+        "name":"Head of list",
+        "isAnswer":false
+      },
+      {
+        "id":1056,
+        "questionId":1010,
+        "name":"Tail of list",
+        "isAnswer":true
+      },
+      {
+        "id":1057,
+        "questionId":1010,
+        "name":"At the centre of list",
+        "isAnswer":false
+      },
+      {
+        "id":1058,
+        "questionId":1010,
+        "name":"All the old entries are pushed and then the new element is inserted",
+        "isAnswer":false
+      }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+  },
+
+
+
+  {
+    "id":1019,
+    "questionTypeId":1,
+    "name":"If the size of the array used to implement a circular queue is MAX_SIZE. How rear moves to traverse inorder to insert an element in the queue?",
+    "options":[
+      {
+        "id":1055,
+        "questionId":1010,
+        "name":"rear=(rear%1)+MAX_SIZE",
+        "isAnswer":false
+      },
+      {
+        "id":1056,
+        "questionId":1010,
+        "name":" rear=(rear+1)%MAX_SIZE",
+        "isAnswer":true
+      },
+      {
+        "id":1057,
+        "questionId":1010,
+        "name":"rear=rear+(1%MAX_SIZE)",
+        "isAnswer":false
+      },
+      {
+        "id":1058,
+        "questionId":1010,
+        "name":"rear=rear%(MAX_SIZE+1)",
+        "isAnswer":false
+      }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+  }
+]
+}

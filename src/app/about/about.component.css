@@ -1,0 +1,18 @@
+.container h1{
+  align-content: center;
+  text-align: center;
+  line-height: 5;
+  text-decoration: solid;
+}
+#thead{
+  text-align: center;
+  font-weight: bold;
+}
+#tbody{
+  text-align: center;
+  font-weight:lighter
+}
+#time{
+  text-align: center;
+  font-style: italic;
+}

@@ -1,0 +1,55 @@
+#top-heading{
+  text-align: center;
+  line-height: 2;
+}
+#top-cont{
+  text-align: center;
+  /* line-height: 2; */
+}
+.top-cont h3{
+  font-style: italic;
+}
+.buttns{
+  text-align: center;
+}
+#options{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#select-quiz{
+  font-weight: bold;
+  text-align: center;
+  font-size:larger;
+  margin-left: 0%;
+}
+#quiz-heading{
+  text-align: center;
+  margin-top: 1%;
+  font-size: x-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#question-number{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: small;
+}
+#quiz{
+  /* text-align: center; */
+
+  margin-left: 20%;
+  margin-right: 20%;
+}
+#question-name{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5em;
+}
+#quiz-btns{
+  margin: 2%;
+}
+
+#review-btns{
+  margin: 2%;
+}
+
+#submit-btns{
+  margin: 2%;
+}

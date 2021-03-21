@@ -1,0 +1,402 @@
+{
+  "id": 1,
+  "name": "Pyhton Quiz",
+  "description": "Python Quiz",
+  "questions": [
+    {
+      "id": 1010,
+      "name": "What is output for  − a = ['he', 'she', 'we'] ' '.join(a)",
+      "questionTypeId": 1,
+      "options": [
+        {
+          "id": 1055,
+          "questionId": 1010,
+          "name": "['heshewe']",
+          "isAnswer": false
+      },
+      {
+          "id": 1056,
+          "questionId": 1010,
+          "name": "'heshewe'",
+          "isAnswer": true
+      },
+      {
+          "id": 1057,
+          "questionId": 1010,
+          "name": "['he she we']",
+          "isAnswer": false
+      },
+      {
+          "id": 1058,
+          "questionId": 1010,
+          "name": "'he she we'",
+          "isAnswer": false
+      }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+  },
+
+
+
+
+  {
+    "id":1011,
+    "name":"What is the output of following code −[ (a,b) for a in range(3) for b in range(a) ]",
+    "questionTypeId":1,
+    "options":[
+        {
+          "id":1055,
+          "questionId":1010,
+          "name":"[ (1,0),(2,1),(3,2)]",
+          "isAnswer":false
+        },
+        {
+          "id":1056,
+          "questionId":1010,
+          "name":"[ (0,0),(1,1),(2,2)]",
+          "isAnswer":false
+        },
+        {
+          "id":1057,
+          "questionId":1010,
+          "name":"[(1,0),(2,1),(2,1)]",
+          "isAnswer":false
+        },
+        {
+          "id":1058,
+          "questionId":1010,
+          "name":"[ (1,0),(2,0),(2,1)]",
+          "isAnswer":true
+        }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+
+  },
+
+
+
+
+  {
+    "id":1012,
+    "name":"Name the error that doesn’t cause program to stop/end, but the output is not the desired result or is incorrect.",
+    "questionTypeId":1,
+    "options":[
+        {
+          "id":1055,
+          "questionId":1010,
+          "name":"Syntax error",
+          "isAnswer":false
+        },
+        {
+          "id":1056,
+          "questionId":1010,
+          "name":"Runtime Error",
+          "isAnswer":false
+        },
+        {
+          "id":1057,
+          "questionId":1010,
+          "name":"Logical Error",
+          "isAnswer":true
+        },
+        {
+          "id":1058,
+          "questionId":1010,
+          "name":"All of the above",
+          "isAnswer":false
+        }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+
+  },
+
+
+
+  {
+    "id":1013,
+    "name":"Which of the following is more accurate for the following declaration? x = Circle()",
+    "questionTypeId":1,
+    "options":[
+        {
+          "id":1055,
+          "questionId":1010,
+          "name":"Now you can assign int value to x.",
+          "isAnswer":false
+        },
+        {
+          "id":1056,
+          "questionId":1010,
+          "name":"x contains a reference to a Circle object.",
+          "isAnswer":true
+        },
+        {
+          "id":1057,
+          "questionId":1010,
+          "name":"x actually contains an object of type Circle.",
+          "isAnswer":false
+        },
+        {
+          "id":1058,
+          "questionId":1010,
+          "name":"x contains an int value.",
+          "isAnswer":false
+        }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+
+  },
+
+
+
+  {
+    "id":1014,
+    "name":"Which way among them is used to create an event loop ?",
+    "questionTypeId":1,
+    "options":[
+        {
+          "id":1055,
+          "questionId":1010,
+          "name":"Window.eventloop()",
+          "isAnswer":false
+        },
+        {
+          "id":1056,
+          "questionId":1010,
+          "name":"Window.mainloop()",
+          "isAnswer":true
+        },
+        {
+          "id":1057,
+          "questionId":1010,
+          "name":"Window.loop()",
+          "isAnswer":false
+        },
+        {
+          "id":1058,
+          "questionId":1010,
+          "name":"Eventloop.window()",
+          "isAnswer":false
+        }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+  },
+
+
+
+
+  {
+    "id":1015,
+    "name":"Which module is used in python to create Graphics?",
+    "questionTypeId":1,
+    "options":[
+        {
+          "id":1055,
+          "questionId":1010,
+          "name":"Turtle",
+          "isAnswer":true
+        },
+        {
+          "id":1056,
+          "questionId":1010,
+          "name":"Canvas",
+          "isAnswer":false
+        },
+        {
+          "id":1057,
+          "questionId":1010,
+          "name":"Tkinter",
+          "isAnswer":false
+        },
+        {
+          "id":1058,
+          "questionId":1010,
+          "name":"Graphics",
+          "isAnswer":false
+        }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+
+  },
+
+
+
+  {
+    "id":1016,
+    "name":"What is a correct syntax to output 'Hello World' in Python?",
+    "questionTypeId":1,
+    "options":[
+      {
+        "id":1055,
+        "questionId":1010,
+        "name":"echo Hello World",
+        "isAnswer":false
+      },
+      {
+        "id":1056,
+        "questionId":1010,
+        "name":"print('Hello World')",
+        "isAnswer":true
+      },
+      {
+        "id":1057,
+        "questionId":1010,
+        "name":"echo('Hello World')",
+        "isAnswer":false
+      },
+      {
+        "id":1058,
+        "questionId":1010,
+        "name":"p('Hello World')",
+        "isAnswer":false
+      }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+
+  },
+
+
+
+  {
+    "id":1017,
+    "questionTypeId":1,
+    "name":"What is the value of round(12.5) - round(11.5)?",
+    "options":[
+      {
+        "id":1055,
+        "questionId":1010,
+        "name":"0",
+        "isAnswer":true
+      },
+      {
+        "id":1056,
+        "questionId":1010,
+        "name":"1",
+        "isAnswer":false
+      },
+      {
+        "id":1057,
+        "questionId":1010,
+        "name":"2",
+        "isAnswer":false
+      },
+      {
+        "id":1058,
+        "questionId":1010,
+        "name":"Will raise error",
+        "isAnswer":false
+      }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+  },
+
+
+
+  {
+    "id":1018,
+    "questionTypeId":1,
+    "name":"Which of the following return True for a string?",
+    "options":[
+      {
+        "id":1055,
+        "questionId":1010,
+        "name":"s[:] == s",
+        "isAnswer":true
+      },
+      {
+        "id":1056,
+        "questionId":1010,
+        "name":"s[:] is s",
+        "isAnswer":true
+      },
+      {
+        "id":1057,
+        "questionId":1010,
+        "name":"s[::-1][::-1] == s",
+        "isAnswer":true
+      },
+      {
+        "id":1058,
+        "questionId":1010,
+        "name":"s[::-1][::-1] is s",
+        "isAnswer":false
+      }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+  },
+
+
+
+  {
+    "id":1019,
+    "questionTypeId":1,
+    "name":"How will you not create a dictionary?",
+    "options":[
+      {
+        "id":1055,
+        "questionId":1010,
+        "name":"d = {'milk': 50, 'celery': 40}",
+        "isAnswer":false
+      },
+      {
+        "id":1056,
+        "questionId":1010,
+        "name":"d = dict(milk=50, celery=40)",
+        "isAnswer":false
+      },
+      {
+        "id":1057,
+        "questionId":1010,
+        "name":"d = dict([ ('milk', 50), ('celery', 40) ])",
+        "isAnswer":false
+      },
+      {
+        "id":1058,
+        "questionId":1010,
+        "name":"d = { ('milk', 50), ('celery', 40) }",
+        "isAnswer":true
+      }
+    ],
+    "questionType": {
+        "id": 1,
+        "name": "Multiple Choice",
+        "isActive": true
+    }
+  }
+]
+}

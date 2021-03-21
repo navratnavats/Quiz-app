@@ -1,0 +1,58 @@
+
+<div class="jumbotron " style="margin-bottom: 0px;">
+  <h1 class="display-4" style="text-align: center; font-weight: bolder ; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contact Us</h1>
+  <p class="lead">Please fill the below details to contact us</p>
+  <hr class="my-2">
+  <form>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault01">First name</label>
+        <input type="text" class="form-control" [(ngModel)]="fname" [ngModelOptions]="{standalone: true}" id="validationDefault01" placeholder="Enter you name" required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault02">Last name</label>
+        <input type="text" class="form-control"[(ngModel)]="lname" [ngModelOptions]="{standalone: true}" id="validationDefault02" placeholder="Enter your last name" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault03">City</label>
+        <input type="text"[(ngModel)]="city" [ngModelOptions]="{standalone: true}" class="form-control" id="validationDefault03" required>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationDefault04">State</label>
+        <select class="custom-select" [(ngModel)]="state" [ngModelOptions]="{standalone: true}" id="validationDefault04" required>
+          <option selected disabled value="">Choose...</option>
+          <option>Uttar Pradesh</option>
+          <option>Madhya Pradesh</option>
+          <option>Arunachal Pradesh</option>
+          <option>Delhi</option>
+          <option>Bihar</option>
+        </select>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationDefault05">Zip</label>
+        <input type="text"[(ngModel)]="zip" [ngModelOptions]="{standalone: true}" class="form-control" id="validationDefault05" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault03">Domain of test you want</label>
+        <input type="text" [(ngModel)]="domain" [ngModelOptions]="{standalone: true}" class="form-control" id="validationDefault03" required placeholder="Technology">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input"  [(ngModel)]="terms" [ngModelOptions]="{standalone: true}"type="checkbox" value="" id="invalidCheck2" required>
+        <label class="form-check-label" for="invalidCheck2">
+          Agree to terms and conditions
+        </label>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit" (click)="show()" required>Submit form</button>
+  </form>
+
+</div>
+
+
+<app-formtesting></app-formtesting>

@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-6">
+  </div>
+  <div class="col-6 text-right options">
+    Select Quiz:
+    <select [(ngModel)]="quizName" (change)="loadQuiz(quizName)">
+      <option #options *ngFor="let quiz of quizes" [value]="quiz.id">{{quiz.name}}</option>
+    </select>
+  </div>
+</div>
+<div id="quiz">
+  <h2 class="text-center font-weight-normal">{{quiz.name}}</h2>
+  <hr />

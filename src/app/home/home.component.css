@@ -1,0 +1,19 @@
+.container-fluid h1{
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 2;
+}
+.container-fluid h3{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: oblique;
+}
+hr{
+    border: 1px dashed grey;
+    margin: 40% 40% 0% 40%;
+    padding: 2% 0% 0% 0%;
+    border-top-color:white ;
+    border-left-color: white;
+    border-right-color: white;
+}
