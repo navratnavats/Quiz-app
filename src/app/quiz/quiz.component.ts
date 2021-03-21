@@ -11,6 +11,7 @@ import { Option, Question, Quiz, QuizConfig } from '../models/index';
 })
 export class QuizComponent implements OnInit {
   correctans:number=0;
+  disans:string[]=[];
   quizes: any[]=[];
   iscorrect:number=0;
   sum:number=0;
@@ -96,16 +97,13 @@ export class QuizComponent implements OnInit {
 
   onSelect(question: Question, option: Option) {
 
-    // console.log("Option");
-    // console.log(option);
+
     if (question.questionTypeId === 1) {
       question.options.forEach((x) => {
 
         if(x.id===option.id && option.isAnswer)
         {
             this.correctans++;
-            console.log(this.correctans);
-
         }
          if (x.id !== option.id)
          {
@@ -133,29 +131,52 @@ export class QuizComponent implements OnInit {
 
   isCorrect(question: Question) {
     let ans= question.options.every(x => x.selected === x.isAnswer) ? 'correct' : 'wrong';
-    if(ans=='correct')
-    {
-      // this.correctans=this.correctans+1;
-      // console.log(this.correctans);
-
-    }
     return ans;
 
   };
 
-  // ansRating(correctans:number){
-  //   if(correctans>9)
-  //   {
-  //     return 'bg-success'
 
-  //   }
-  // }
+  counter=0;
+  displayResult(){
 
-  onSubmit() {
+    this.quiz.questions.forEach(x=>
+      x.options.forEach(y=>{
+        if(y.isAnswer===true)
+        {
+          let quesid=y.id
+          if(quesid==1055)
+          {
+            this.disans.push('a');
+          }
+          else if(quesid==1056)
+          {
+            this.disans.push('b')
+          }
+          else if(quesid==1057)
+          {
+            this.disans.push('c')
+          }
+          else
+          {
+            this.disans.push('d')
+          }
+        }
+      }));
+      // console.log(this.disans);
+
+
+  }
+
+  onDetailresult(){
     let answers = [];
     this.quiz.questions.forEach(x => answers.push(
       { 'quizId': this.quiz.id, 'questionId': x.id, 'answered': x.answered }
       ));
+      // console.log(this.quiz.questions);
+      this.mode='detailresult'
+  }
+  onSubmit() {
+
     this.mode = 'result';
   }
 }
