@@ -1,3 +1,4 @@
+import { FormBuilder,Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 // import {MatSnackBar} from '@angular/material/snack-bar';
 
@@ -9,40 +10,35 @@ import { Component, OnInit } from '@angular/core';
 
 export class ContactComponent implements OnInit {
 
-  fname:string="";
-  lname:string="";
-  city:string="";
-  state:string="";
-  zip:string=""
-  domain:string="";
-  terms:boolean=false
+
+  constructor(private fb:FormBuilder){
+  }
+
+  contactForm=this.fb.group({
+    fname:['',Validators.required],
+    lname:['',Validators.required],
+    city:['',Validators.required],
+    state:['',Validators.required],
+    zip:['',Validators.required],
+    domain:['',Validators.required],
+    terms:[false,Validators.required]
+  });
+
   show(){
-    if(this.fname=="" || this.lname=="" || this.city=="" || this.state=="" || this.zip=="" || this.domain=="")
-    {
-      alert("Please fill all the details")
-    }
-    else if(!this.terms)
-    {
-      alert("Please accept terms and condition")
-    }
-    else
-    {
-      console.log(this.terms);
+    console.log(this.contactForm.status);
 
-      alert("We will contact you real soon!!")
-      this.fname="";
-      this.lname="";
-      this.city="";
-      this.state="";
-      this.zip=""
-      this.domain="";
+    console.log(this.contactForm.value);
+    console.log(this.contactForm.get('terms')?.value);
+    if(this.contactForm.status=="VALID")
+    {
+      alert("We will contact you soon.")
+      this.contactForm.reset();
+
     }
 
-  }
-  constructor(){
-  }
 
-  ngOnInit(): void {
+
+  }  ngOnInit(): void {
   }
 
 }

@@ -100,6 +100,8 @@ export class QuizComponent implements OnInit {
 
     if (question.questionTypeId === 1) {
       question.options.forEach((x) => {
+        console.log(x);
+
 
         if(x.id===option.id && option.isAnswer)
         {

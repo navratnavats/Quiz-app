@@ -17,7 +17,6 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 import { ReactiveFormsModule } from '@angular/forms';
-import { FormtestingComponent } from './formtesting/formtesting.component';
 
 
 @NgModule({
@@ -29,8 +28,6 @@ import { FormtestingComponent } from './formtesting/formtesting.component';
     FooterComponent,
     HomeComponent,
     QuizComponent,
-    FormtestingComponent,
-
 
   ],
   imports: [
