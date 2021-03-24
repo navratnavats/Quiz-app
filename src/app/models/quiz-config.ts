@@ -1,7 +1,6 @@
 
 export class QuizConfig {
   moveBack: boolean;
-  // canReview: boolean;
   autoMove: boolean;
   duration: number;
   pageSize: number;
@@ -12,7 +11,6 @@ export class QuizConfig {
   constructor(data: any) {
       data = data || {};
       this.moveBack = data.moveBack;
-      // this.canReview = data.caReview;
       this.autoMove = data.autoMove;
       this.duration = data.duration;
       this.pageSize = data.pageSize;

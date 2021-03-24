@@ -4,7 +4,7 @@
   <h3 *ngIf="mode==='quiz'">Take the quiz and make yourself better</h3>
   <div class="row"></div>
 </div>
-<div class="row" style="width:100%;" *ngIf="mode!='result' && mode!='review' ">
+<div class="row" style="width:100%;" *ngIf="mode!='result' && mode!='review' && mode!='detailresult' ">
   <div class="col-md-12" id="select-quiz">
     Select Quiz:
     <select [(ngModel)]="quizName" (change)="loadQuiz(quizName)">
@@ -81,7 +81,7 @@
     <!-- Retry button -->
     <div class="container-fluid row" style="text-align: center; ">
       <div class="col-md-12">
-        <h4 class="alert alert-info text-center">To take test again
+        <h4 class="alert alert-info text-center">To take test again.
           <button [routerLink]="['']" class="btn btn-outline-primary" style="text-align: center;">Click here</button>
         </h4>
       </div>
@@ -93,7 +93,7 @@
         <h5 id="question-name">{{index + 1}}) {{question.name}}</h5>
         <div class="row">
           <div class="col-6" *ngFor="let Option of question.options">
-            <input id="{{Option.id}}" type="checkbox" disabled="disabled" [(ngModel)]="Option.selected" /> {{Option.name}}
+            <input id="{{Option.id}}" type="checkbox" disabled="disabled"  [(ngModel)]="Option.selected" /> {{Option.name}}
           </div>
         </div>
         <div class="p-1 m-2 alert {{ isCorrect(question) == 'correct'? 'alert-success': 'alert-danger'}}">Your answer is
@@ -103,12 +103,12 @@
     <button (click)="displayResult()"class="btn btn-secondary">Click me to see answers</button>
     <div style="margin-top: 2%;" *ngFor="let ans of disans; let index=index">
       <ul>
-        <li>{{index}} : {{ans}}</li>
+        <li>{{index+1}} : {{ans}}</li>
       </ul>
     </div>
   </div>
 
-  <!-- Detailed Result Ends -->
+  <!-- Detail Result Ends -->
 
   <!-- Score Sheet -->
   <div class="score" *ngIf="mode==='result'">
@@ -129,6 +129,12 @@
     </ng-template>
 
     <p>To see your detailed result  <button class="btn btn-outline-primary" (click)="onDetailresult()">Click me</button></p>
+    <button (click)="displayResult()"class="btn btn-secondary">Click me to see answers</button>
+    <div style="margin-top: 2%;" *ngFor="let ans of disans; let index=index">
+      <ul>
+        <li>{{index+1}} : {{ans}}</li>
+      </ul>
+    </div>
   </div>
   <!-- Scoresheet ends -->
 

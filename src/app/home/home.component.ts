@@ -11,13 +11,6 @@ export class HomeComponent implements OnInit {
   @Output() output=new EventEmitter<string>();
   constructor() { }
 
-  quiz(quizname:string)
-  {
-    // console.log("from home output"+this.output.emit(quizname));
-
-    this.output.emit(quizname);
-  }
-
   ngOnInit(): void {
   }
 

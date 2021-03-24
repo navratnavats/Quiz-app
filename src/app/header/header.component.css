@@ -1,3 +1,6 @@
 .navbar{
   font-size: larger;
 }
+.navbar-brand{
+  font-size: 1.8em;
+}

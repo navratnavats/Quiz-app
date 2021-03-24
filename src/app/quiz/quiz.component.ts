@@ -10,6 +10,7 @@ import { Option, Question, Quiz, QuizConfig } from '../models/index';
   providers: [QuizService]
 })
 export class QuizComponent implements OnInit {
+  no_of_time_displayAns:number=0;
   correctans:number=0;
   disans:string[]=[];
   quizes: any[]=[];
@@ -20,7 +21,6 @@ export class QuizComponent implements OnInit {
   quizName: string="";
   config: QuizConfig = {
     'moveBack': true,
-    // 'canReview': true,
     'autoMove': false,
     'duration': 120,
     'pageSize': 1,
@@ -64,9 +64,6 @@ export class QuizComponent implements OnInit {
   // timer
   tick() {
     const now = new Date();
-    // console.log("sirf now "+now);
-    // console.log("get time" +now.getTime());
-
 
     const diff = (now.getTime() - this.startTime.getTime()) / 1000;
     // console.log(diff);
@@ -85,8 +82,6 @@ export class QuizComponent implements OnInit {
     secs = (secs < 10 ? '0' : '') + secs;
     // console.log("min= "+{mins} +"sec = "+{secs});
     // console.log(`${mins}:${secs}`);
-
-
     return `${mins}:${secs}`;
   }
 
@@ -101,8 +96,6 @@ export class QuizComponent implements OnInit {
     if (question.questionTypeId === 1) {
       question.options.forEach((x) => {
         console.log(x);
-
-
         if(x.id===option.id && option.isAnswer)
         {
             this.correctans++;
@@ -141,6 +134,9 @@ export class QuizComponent implements OnInit {
   counter=0;
   displayResult(){
 
+    if(this.no_of_time_displayAns<1)
+    {
+      this.no_of_time_displayAns++;
     this.quiz.questions.forEach(x=>
       x.options.forEach(y=>{
         if(y.isAnswer===true)
@@ -164,6 +160,7 @@ export class QuizComponent implements OnInit {
           }
         }
       }));
+    }
       // console.log(this.disans);
 
 

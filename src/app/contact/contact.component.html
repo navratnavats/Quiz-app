@@ -5,53 +5,97 @@
   <hr class="my-2">
   <form [formGroup]='contactForm' (ngSubmit)='show()' >
     <div class="form-row">
+      <!-- Firstname div start -->
       <div class="col-md-6 mb-3">
         <label for="validationDefault01">First name</label>
         <input type="text" formControlName='fname' class="form-control" required>
         <span class="text-danger" *ngIf="contactForm.get('fname')?.hasError('required')">This is required filed</span>
       </div>
+      <!-- Firstname div ends -->
+
+      <!-- Lastname div starts -->
       <div class="col-md-6 mb-3">
         <label for="validationDefault02">Last name</label>
         <input type="text" formControlName="lname" class="form-control">
         <span class="text-danger" *ngIf="contactForm.get('lname')?.hasError('required')">This filed is required</span>
       </div>
+      <!-- Lastname div ends -->
     </div>
     <div class="form-row">
+      <!-- City div starts -->
       <div class="col-md-6 mb-3">
         <label for="validationDefault03">City</label>
         <input type="text" formControlName="city" class="form-control">
         <span class="text-danger" *ngIf="contactForm.get('city')?.hasError('required')">This filed is required</span>
 
       </div>
+      <!-- City div ends -->
+
+      <!-- State div starts -->
       <div class="col-md-3 mb-3">
         <label for="validationDefault04">State</label>
 
         <select type="text" formControlName="state" class="form-control">
           <option selected disabled value="">Choose...</option>
-          <option>Uttar Pradesh</option>
-          <option>Madhya Pradesh</option>
+          <option>Andhra Pradesh </option>
           <option>Arunachal Pradesh</option>
-          <option>Delhi</option>
+          <option>Assam</option>
           <option>Bihar</option>
+          <option>Chhattisgarh</option>
+          <option>Delhi</option>
+          <option>Goa</option>
+          <option>Gujarat</option>
+          <option>Haryana</option>
+          <option>Himachal Pradesh</option>
+          <option>Jammu and Kashmir</option>
+          <option>Jharkhand</option>
+          <option>Karnataka</option>
+          <option>Kerala</option>
+          <option>Ladhak</option>
+          <option>Lakshadweep</option>
+          <option>Madhya Pradesh</option>
+          <option>Maharashtra</option>
+          <option>Manipur</option>
+          <option>Meghalaya</option>
+          <option>Mizoram</option>
+          <option>Nagaland</option>
+          <option>Odisha</option>
+          <option>Puducherry</option>
+          <option>Punjab</option>
+          <option>Rajasthan</option>
+          <option>Sikkim</option>
+          <option>Tamil Nadu</option>
+          <option>Telangana</option>
+          <option>Uttar Pradesh</option>
+          <option>Uttarakhand</option>
+          <option>West Bengal</option>
         </select>
         <span class="text-danger" *ngIf="contactForm.get('state')?.hasError('required')">This filed is required</span>
 
       </div>
+      <!-- State div ends -->
+
+      <!-- Zip div starts -->
       <div class="col-md-3 mb-3">
         <label for="validationDefault05">Zip</label>
         <input type="text" formControlName="zip" class="form-control">
         <span class="text-danger" *ngIf="contactForm.get('zip')?.hasError('required')">This filed is required</span>
 
       </div>
+      <!-- Zip div ends-->
     </div>
     <div class="form-row">
+
+      <!-- Domain div starts -->
       <div class="col-md-6 mb-3">
         <label for="validationDefault03">Domain of test you want</label>
-        <input type="text" formControlName="domain" class="form-control">
+        <input type="text" formControlName="domain" class="form-control" placeholder="Java">
         <span class="text-danger" *ngIf="contactForm.get('domain')?.hasError('required')">This filed is required</span>
 
       </div>
+      <!-- domain div ends-->
     </div>
+    <!-- Terms div starts -->
     <div class="form-group">
       <div class="form-check">
         <input type="checkbox" formControlName="terms" class="form-check-input">
@@ -62,6 +106,7 @@
           || !contactForm.get('terms')?.value">This filed is required</span>
       </div>
     </div>
+    <!-- Terms div ends -->
 
     <button class="btn btn-primary" type="submit"  *ngIf="contactForm.status=='INVALID'
     || !contactForm.get('terms')?.value;else elsetemplate" disabled>Submit form</button>

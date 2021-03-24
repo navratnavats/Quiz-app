@@ -1,6 +1,5 @@
 import { FormBuilder,Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
-// import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-contact',
@@ -25,10 +24,6 @@ export class ContactComponent implements OnInit {
   });
 
   show(){
-    console.log(this.contactForm.status);
-
-    console.log(this.contactForm.value);
-    console.log(this.contactForm.get('terms')?.value);
     if(this.contactForm.status=="VALID")
     {
       alert("We will contact you soon.")
