@@ -1,5 +1,4 @@
 import { Component, OnInit, Output,EventEmitter } from '@angular/core';
-// import EventEmitter from 'node:events';
 
 @Component({
   selector: 'app-home',
