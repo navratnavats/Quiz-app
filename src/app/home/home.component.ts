@@ -7,12 +7,9 @@ import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  mode='home'
   constructor() {
   }
-  changemode(){
-    this.mode='quiz'
-  }
+
 
   ngOnInit(): void {
 
