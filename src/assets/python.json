@@ -1,6 +1,6 @@
 {
   "id": 1,
-  "name": "Pyhton Quiz",
+  "name": "Python Quiz",
   "description": "Python Quiz",
   "questions": [
     {
@@ -337,14 +337,14 @@
       {
         "id":1056,
         "questionId":1010,
-        "name":"s[:] is s",
-        "isAnswer":true
+        "name":"s[:2] is s",
+        "isAnswer":false
       },
       {
         "id":1057,
         "questionId":1010,
-        "name":"s[::-1][::-1] == s",
-        "isAnswer":true
+        "name":"s[::1][::-1] == s",
+        "isAnswer":false
       },
       {
         "id":1058,

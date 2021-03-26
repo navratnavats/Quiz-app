@@ -1,9 +1,9 @@
 export class Option {
-  id: number;
-  questionId: number;
-  name: string;
-  isAnswer: boolean;
-  selected?: boolean;
+  id: number=0;
+  questionId: number=0;
+  name: string="";
+  isAnswer: boolean=false;
+  selected?: boolean=false;
 
   constructor(data: any) {
       data = data || {};

@@ -1,19 +1,73 @@
+.a{
+  /* background-color:powderblue ; */
+  height: max-content;
+background-image: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Purple-Modern-Pattern-Simple-Background-Image.jpg);}
 .container-fluid h1{
   text-align: center;
   font-weight: bold;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
   line-height: 2;
+  color:yellow;
 }
-.container-fluid h3{
+.card{
+  background-color:paleturquoise ;
+}
+.container-fluid> h3{
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  font-style: oblique;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
+  color: pink;
+  /* font-style: oblique; */
+}
+#hrid1
+{
+    margin-top: 3px;
+    padding-top: 0px;
+    border-top-width: 0px;
+    margin-bottom: 15px;
+}
+#quizheading{
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  color: pink;
+
+}
+#offer>h2{
+  /* font-family: 'Great Vibes', cursive;
+  font-family: 'IM Fell Double Pica', serif; */
+    text-align: center;
+    font-family: 'IM Fell Double Pica', serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: pink;
 }
 hr{
     border: 1px dashed grey;
-    margin: 40% 40% 0% 40%;
+    margin: 0% 40% 0% 40%;
     padding: 2% 0% 0% 0%;
+    border-top-width: 0px;
+    border-left-width:0px ;
+    border-right-width: 0px;
+
     border-top-color:white ;
     border-left-color: white;
     border-right-color: white;
 }
+.card-title{
+  font-family: 'Lobster', cursive;
+  /* font-weight: bold; */
+  font-size: 1.5em;
+}
+.ins
+{
+  margin:5% 10% 0% 10%
+}
+.ins>.card-header>h1{
+  font-size: 3em;
+  margin:1%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+

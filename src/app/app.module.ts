@@ -17,6 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
+import { InformationComponent } from './information/information.component';
 
 
 @NgModule({
@@ -28,6 +30,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     HomeComponent,
     QuizComponent,
+    InformationComponent,
 
   ],
   imports: [
@@ -38,6 +41,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    ChartsModule
 
   ],
   providers: [],

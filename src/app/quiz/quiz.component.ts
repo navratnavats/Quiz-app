@@ -1,8 +1,10 @@
+import { ChartType } from 'chart.js';
 import { Component, OnInit } from '@angular/core';
-
 import { QuizService } from '../services/quiz.service';
 import { Option, Question, Quiz, QuizConfig } from '../models/index';
+import { ChartsModule } from 'ng2-charts';
 
+import { Label,SingleDataSet } from 'ng2-charts'
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
@@ -10,23 +12,26 @@ import { Option, Question, Quiz, QuizConfig } from '../models/index';
   providers: [QuizService]
 })
 export class QuizComponent implements OnInit {
+
+  doughnutChartLabels:Label[]=[];
+  doughnutChartData:SingleDataSet=[]
+  doughnutChartType:ChartType='doughnut'
   no_of_time_displayAns:number=0;
+  ishidden:boolean=false;
   correctans:number=0;
+  attempted:number=0;
   disans:string[]=[];
   quizes: any[]=[];
   iscorrect:number=0;
   sum:number=0;
   quiz: Quiz = new Quiz(null);
-  mode = 'quiz';
+  mode = 'info';
   quizName: string="";
+  isdisable:boolean=false;
   config: QuizConfig = {
     'moveBack': true,
-    'autoMove': false,
+    'autoMove': true,
     'duration': 120,
-    'pageSize': 1,
-    'requiredAll': false,
-    'showClock': false,
-    'showPager': true,
   };
 
   pager = {
@@ -45,21 +50,36 @@ export class QuizComponent implements OnInit {
   ngOnInit() {
     this.quizes = this.quizService.getAll();
     this.quizName = this.quizes[0].id;
-    this.loadQuiz(this.quizName);
+    setTimeout(() => {
+      this.loadQuiz(this.quizName);
+    }, 5000);
+
   }
 
   loadQuiz(quizName: string) {
+
     //loading jsons
-    this.quizService.get(quizName).subscribe(res => {
-      this.quiz = new Quiz(res);
-      this.pager.count = this.quiz.questions.length;
-      this.startTime = new Date();
-      this.ellapsedTime = '00:00';
-      this.timer = setInterval(() => { this.tick(); }, 1000);
-      this.duration = this.parseTime(this.config.duration);
-    });
-    this.mode = 'quiz';
+
+    setTimeout(() => {
+      this.ishidden=true
+      this.quizService.get(quizName).subscribe(res => {
+        this.quiz = new Quiz(res);
+        this.pager.count = this.quiz.questions.length;
+        this.startTime = new Date();
+        this.ellapsedTime = '00:00';
+
+          this.timer = setInterval(() => { this.tick(); }, 1000);
+          this.duration = this.parseTime(this.config.duration);
+
+
+      });
+      this.mode = 'quiz';
+
+    }, 500);
+
   }
+
+
 
   // timer
   tick() {
@@ -91,14 +111,18 @@ export class QuizComponent implements OnInit {
   }
 
   onSelect(question: Question, option: Option) {
-
-
     if (question.questionTypeId === 1) {
+      this.attempted++;
+
       question.options.forEach((x) => {
-        console.log(x);
+        // console.log(x);
         if(x.id===option.id && option.isAnswer)
         {
             this.correctans++;
+            if(this.correctans>10)
+            {
+              this.correctans=10;
+            }
         }
          if (x.id !== option.id)
          {
@@ -107,10 +131,12 @@ export class QuizComponent implements OnInit {
 
         });
     }
+    setTimeout(() => {
+      if (this.config.autoMove) {
+        this.goTo(this.pager.index + 1);
+      }
+    }, 100);
 
-    if (this.config.autoMove) {
-      this.goTo(this.pager.index + 1);
-    }
   }
 
   goTo(index: number) {
@@ -119,6 +145,7 @@ export class QuizComponent implements OnInit {
       this.mode = 'quiz';
     }
   }
+
 
   isAnswered(question: Question) {
     return question.options.find(x => x.selected) ? 'Answered' : 'Not Answered';
@@ -137,7 +164,7 @@ export class QuizComponent implements OnInit {
     if(this.no_of_time_displayAns<1)
     {
       this.no_of_time_displayAns++;
-    this.quiz.questions.forEach(x=>
+      this.quiz.questions.forEach(x=>
       x.options.forEach(y=>{
         if(y.isAnswer===true)
         {
@@ -161,7 +188,6 @@ export class QuizComponent implements OnInit {
         }
       }));
     }
-      // console.log(this.disans);
 
 
   }
@@ -174,7 +200,17 @@ export class QuizComponent implements OnInit {
       // console.log(this.quiz.questions);
       this.mode='detailresult'
   }
+
+
   onSubmit() {
+
+    // console.log(this.correctans);
+    // console.log(this.attempted);
+    this.doughnutChartLabels=['Correct Answers' , ' Incorrect Answers' , ' Unattempted'];
+    this.doughnutChartData=[
+    [this.correctans , (10-this.correctans) , (10-this.attempted) ]
+  ];
+
 
     this.mode = 'result';
   }

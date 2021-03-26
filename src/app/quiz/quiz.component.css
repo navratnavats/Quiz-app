@@ -1,6 +1,15 @@
+.all
+{
+  background-image: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Purple-Modern-Pattern-Simple-Background-Image.jpg);
+  height: fit-content;
+}
 #top-heading{
   text-align: center;
   line-height: 2;
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+  color: pink;
+
 }
 #top-cont{
   text-align: center;
@@ -12,9 +21,21 @@
 .buttns{
   text-align: center;
 }
+#select-quiz{
+  font-family: 'IM Fell Double Pica', serif;
+  color: pink;
+}
 #options{
   font-weight: bold;
+  font-family: 'PT Sans', sans-serif;
   font-size: 1.2em;
+  margin-left: 8% ;
+}
+#motivator{
+  color: pink;
+  font-family: 'Lobster', cursive;
+  font-size: 1.5em;
+
 }
 #select-quiz{
   font-weight: bold;
@@ -25,26 +46,43 @@
 #quiz-heading{
   text-align: center;
   margin-top: 1%;
-  font-size: x-large;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  color: pink;
+  font-family: 'IM Fell Double Pica', serif;
+
 }
 #question-number{
   font-family: 'Times New Roman', Times, serif;
   font-size: small;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+#timer{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: small;
+  margin-right: 2%;
+  margin-top: 1%;
 }
 #quiz{
   /* text-align: center; */
-
+  background-color: white;
   margin-left: 20%;
   margin-right: 20%;
+}
+.review{
+  margin: 0% 1% 0% 1%;
+}
+#reviewshape{
+  border-radius: 25px;
 }
 #reviewheading{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
 }
-#question-name{
-  font-family: 'Times New Roman', Times, serif;
+#questioname{
+  font-family: 'PT Sans', sans-serif;
   font-size: 1.5em;
+  margin-left: 3%;
 }
 #quiz-btns{
   margin: 2%;
@@ -56,4 +94,14 @@
 
 #submit-btns{
   margin: 2%;
+}
+.score>h4+h2{
+  color: black;
+  font-size: 1.4em;
+  font-family: 'Roboto Mono', monospace;
+}
+#quiz>h3{
+  font-family: 'PT Sans', sans-serif;
+  color: pink;
+
 }

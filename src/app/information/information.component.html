@@ -1,0 +1,27 @@
+<div class="card  ins">
+  <div class="card-header text-center"> <h1>Welcome to the quiz section.</h1></div>
+  <div class="card-body">
+    <h2 class="card-title text-center"> Please read the following instructions before procedding to test</h2>
+    <ol style="list-style-type: lower-roman;" class="card-text">
+      <div style="margin-left: 10%; " >
+        <li style="font-weight: bolder;">Upon loading you will be given 5 seconds to select the perfect quiz for you
+        after which <em>Java Quiz</em> will be loaded by default. </li>
+        <li>Upon selecting the answer quiz will automove to next question.</li>
+        <li>Only one answer is correct</li>
+        <li>You can review the test.
+          <ul>
+            <li>One shown in Yellow are pending once</li>
+            <li>One shown in green are attempted one</li>
+          </ul>
+        </li>
+        <li>Attempting all the question is not required</li>
+        <li>Upon submission you will be redirected to page consisiting of your marks and percentage</li>
+        <li>You will get an option to see detailed result </li>
+      </div>
+    </ol>
+      <div class="card-footer text-center button-group" >
+        <button class="btn btn-success start" [routerLink]="['/quiz']">Start Test</button>
+        <button class="btn btn-danger quit "  [routerLink]="['/home']">Quit Quiz</button>
+      </div>
+  </div>
+  </div>

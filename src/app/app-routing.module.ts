@@ -1,3 +1,4 @@
+import { InformationComponent } from './information/information.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
@@ -32,15 +33,12 @@ const routes: Routes = [
     pathMatch:"full"
   },
   {
-    path:"home/quiz",
-    component:QuizComponent,
-    pathMatch:"full"
-  },
-  {
-    path:"home/quiz/quiz",
-    component:QuizComponent,
+    path:"info",
+    component:InformationComponent,
     pathMatch:"full"
   }
+
+
 ];
 
 @NgModule({

@@ -1,0 +1,21 @@
+.start{
+  margin-right: 10%;
+}
+.ins{
+  margin:5% 10% 0% 10%
+
+}
+.card{
+  background-color:paleturquoise ;
+
+}
+.ins>.card-header>h1{
+  font-size: 3em;
+  margin:1%;
+  font-family: 'Times New Roman', Times, serif;
+}
+.card-title{
+  font-family: 'Lobster', cursive;
+  /* font-weight: bold; */
+  font-size: 1.5em;
+}

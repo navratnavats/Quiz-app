@@ -1,115 +1,156 @@
-<div class="container-fluid text-center">
-  <!--heading-->
-  <h1>Take Step Forward With Us!!</h1>
-  <h3>&quot; Practice makes you perfect &quot;</h3>
-  <!--heading ends-->
+<div >
 
-  <!--Offer cards starts-->
-  <div class="container-fulid" #offer >
-    <!--offer heading-->
-    <h2 style="text-align: center;">What do we offer!!</h2>
-    <!--offer heading ends-->
+  <div class="container-fluid text-center a">
 
-    <!-- offer cards starts-->
-    <div class="row ">
-      <!--Offer 1-->
-      <div class="col-sm-4">
-        <div class="card text-center">
-          <div class="card-body">
-            <h2 class="card-title">Multiple Tests</h2>
-            <p class="card-text">We offer different tests for you in multiple domain.</p>
-            <p>Click Below to contact us for the test you want</p>
-            <a href="" [routerLink]="['/contact']" class="btn btn-primary"> Contact Us</a>
+    <!--heading-->
+    <h1>Take Step Forward With Us!!</h1>
+    <h3>&quot; Practice makes you perfect &quot;</h3>
+    <!--heading ends-->
+
+    <!--Offer cards starts-->
+    <div class="container-fulid" id="offer" >
+      <!--offer heading-->
+      <h2>What do we offer!!</h2>
+      <!--offer heading ends-->
+      <hr id="hrid1">
+
+      <!-- offer cards starts-->
+      <div class="row ">
+        <!--Offer 1-->
+        <div class="col-sm-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h2 class="card-title">Multiple Tests</h2>
+              <p class="card-text">We offer different tests for you in multiple domain.</p>
+              <p>Click Below to contact us for the test you want</p>
+              <a href="" [routerLink]="['/contact']" class="btn btn-primary"> Contact Us</a>
+            </div>
           </div>
         </div>
-      </div>
-      <!--Offer 1 ends-->
+        <!--Offer 1 ends-->
 
-      <!--Offer 2-->
-      <div class="col-sm-4 d-flex">
-        <div class="card text-center">
-          <div class="card-body  flex-fill">
-            <h2 class="card-title">Evaluate yourself</h2>
-            <p class="card-text"><p> We wil tell you your score. Provide you with detailed
-              result of your test.</p>
-              <p> <strong>Time based test will help you keep up the pace and
-                get an experience how to face real world tests.</strong>
-            </p>
+        <!--Offer 2-->
+        <div class="col-sm-4 d-flex">
+          <div class="card text-center">
+            <div class="card-body  flex-fill">
+              <h2 class="card-title">Evaluate yourself</h2>
+              <p class="card-text"><p> We wil tell you your score. Provide you with detailed
+                result of your test.</p>
+                <p> <strong>Time based test will help you keep up the pace and
+                  get an experience how to face real world tests.</strong>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <!--Offer 2 ends-->
+        <!--Offer 2 ends-->
 
-      <!--Offer 3-->
-      <div class="col-sm-4 d-flex">
-        <div class="card text-center">
-          <div class="card-body flex-fill">
-            <h2 class="card-title">Check Answers</h2>
-            <p class="card-text">We provide you with an option to cross check
-              yourself by displaying the answers.
-            </p>
+        <!--Offer 3-->
+        <div class="col-sm-4 d-flex">
+          <div class="card text-center">
+            <div class="card-body flex-fill">
+              <h2 class="card-title">Check Answers</h2>
+              <p class="card-text">We provide you with an option to cross check
+                yourself by displaying the answers.
+              </p>
+            </div>
           </div>
         </div>
+        <!--Offer 3 ends-->
       </div>
-      <!--Offer 3 ends-->
     </div>
-  </div>
-  <!--Offer cards ends-->
+    <!--Offer cards ends-->
 
-  <!--Test cards start-->
-  <div class="container-fluid">
-    <!--Test heading-->
-    <hr class="my-2">
-    <h2 style="text-align: center;">Quiz we offer</h2>
-    <button [routerLink]="['quiz']" class="btn btn-success btn-large" style="margin-bottom: 2%;">Take Quiz</button>
+    <!--Test cards start-->
+    <div class="container-fluid" style="padding-bottom: 3%;">
+      <!--Test heading-->
+      <hr class="my-2">
+      <h2 style="text-align: center;" id="quizheading">Quiz we offer</h2>
+      <button [routerLink]="['/info']" class="btn btn-success btn-large" style="margin-bottom: 2%;">Take Quiz</button>
 
-    <div class="row">
-      <!--Test 1 card-->
-      <div class="col-sm-4">
-        <div class="card text-center">
-          <div class="card-header">Test 1</div>
-          <div class="card-body">
-          <h2 class="card-title"> Python</h2>
-          <p class="card-text">This test will help you achieve perfection in Python</p>
-          <!-- <button  class="card-text btn btn-primary"style="margin-bottom: 2%;">Click here to take test</button> -->
-          <div class="card-footer">Updated 2 days ago</div>
+      <div class="row">
+        <!--Test 1 card-->
+        <div class="col-sm-4">
+          <div class="card text-center">
+            <div class="card-header">Test 1</div>
+            <div class="card-body">
+            <h2 class="card-title">
+              <img style="width: 13.25em; height: 6.3em;" src="https://i.pinimg.com/736x/4d/13/d5/4d13d55d6d0b38b7a4e85fcf97ff6279.jpg" alt="pythonlogo">
+              <br> Python</h2>
+            <p class="card-text">This test will help you achieve perfection in Python</p>
+            <!-- <button  class="card-text btn btn-primary"style="margin-bottom: 2%;">Click here to take test</button> -->
+            <div class="card-footer">Updated 2 days ago</div>
+            </div>
           </div>
         </div>
-      </div>
-      <!--Test 1 card ends-->
+        <!--Test 1 card ends-->
 
-      <!--Test 2 card-->
-      <div class="col-sm-4">
-        <div class="card text-center">
-          <div class="card-header">Test 2</div>
-          <div class="card-body">
-          <h2 class="card-title"> Java</h2>
-          <p class="card-text">This test will help you achieve perfection in Java</p>
-          <!-- <a  [routerLink]="['java']" class="card-text btn btn-primary" style="margin-bottom: 2%;">Click here to take test</a> -->
-          <div class="card-footer">Updated 4 days ago</div>
+        <!--Test 2 card-->
+        <div class="col-sm-4">
+          <div class="card text-center">
+            <div class="card-header">Test 2</div>
+            <div class="card-body">
+            <h2 class="card-title">
+              <img style="width: 13.25em; height: 6.3em;" src="https://i.pinimg.com/originals/e9/94/61/e99461fdd5b3db8bdb3081d8acf5e524.png" alt="javalogo">
+              <br> Java</h2>
+            <p class="card-text">This test will help you achieve perfection in Java</p>
+            <!-- <a  [routerLink]="['java']" class="card-text btn btn-primary" style="margin-bottom: 2%;">Click here to take test</a> -->
+            <div class="card-footer">Updated 4 days ago</div>
+            </div>
           </div>
         </div>
-      </div>
-      <!--Test 2 card ends-->
+        <!--Test 2 card ends-->
 
-      <!--Test 3 card-->
-      <div class="col-sm-4">
-        <div class="card text-center">
-          <div class="card-header">Test 3</div>
-          <div class="card-body">
-          <h2 class="card-title"> SQL</h2>
-          <p class="card-text">This test will help you achieve perfection in SQL</p>
-          <!-- <button  class="card-text btn btn-primary"style="margin-bottom: 2%;">Click here to take test</button> -->
-          <div class="card-footer">Updated 1 day ago</div>
+        <!--Test 3 card-->
+        <div class="col-sm-4">
+          <div class="card text-center">
+            <div class="card-header">Test 3</div>
+            <div class="card-body">
+            <h2 class="card-title">
+              <img style="width: 13.25em; height: 6.3em;" src="https://thumbs.dreamstime.com/b/sql-database-web-language-programming-designing-logo-monogram-symbol-sites-banners-171784940.jpg" alt="">
+              <br> SQL</h2>
+            <p class="card-text">This test will help you achieve perfection in SQL</p>
+            <!-- <button  class="card-text btn btn-primary"style="margin-bottom: 2%;">Click here to take test</button> -->
+            <div class="card-footer">Updated 1 day ago</div>
+            </div>
           </div>
         </div>
+        <!--Test 3 card ends-->
       </div>
-      <!--Test 3 card ends-->
     </div>
-  </div>
-  <!--Test cards ends-->
+    <!--Test cards ends-->
 
+  </div>
+
+  <app-footer></app-footer>
 </div>
-
-<app-footer></app-footer>
+<!-- <ng-template #elsetemplate >
+<div class="card  ins">
+<div class="card-header text-center"> <h1>Welcome to the quiz section.</h1></div>
+<div class="card-body">
+  <h2 class="card-title text-center"> Please read the following instructions before procedding to test</h2>
+  <ol style="list-style-type: lower-roman;" class="card-text">
+    <div style="margin-left: 10%; " >
+      <li style="font-weight: bolder;">Upon loading you will be given 5 seconds to select the perfect quiz for you
+      after which <em>Java Quiz</em> will be loaded by default. </li>
+      <li>Upon selecting the answer quiz will automove to next question.</li>
+      <li>Only one answer is correct</li>
+      <li>You can review the test.
+        <ul>
+          <li>One shown in Yellow are pending once</li>
+          <li>One shown in green are attempted one</li>
+        </ul>
+      </li>
+      <li>Attempting all the question is not required</li>
+      <li>Upon submission you will be redirected to page consisiting of your marks and percentage</li>
+      <li>You will get an option to see detailed result </li>
+    </div>
+  </ol>
+    <div class="card-footer text-center" >
+      <button class="btn btn-success" [routerLink]="['quiz']">Start Test</button>
+      <div *ngIf=""></div>
+      <button class="btn btn-danger "  [routerLink]="['']"></button>
+    </div>
+</div>
+</div>
+</ng-template> -->
 
