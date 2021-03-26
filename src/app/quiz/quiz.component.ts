@@ -4,7 +4,7 @@ import { QuizService } from '../services/quiz.service';
 import { Option, Question, Quiz, QuizConfig } from '../models/index';
 import { ChartsModule } from 'ng2-charts';
 
-import { Label,SingleDataSet } from 'ng2-charts'
+import { Label,MultiDataSet } from 'ng2-charts'
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
@@ -14,7 +14,7 @@ import { Label,SingleDataSet } from 'ng2-charts'
 export class QuizComponent implements OnInit {
 
   doughnutChartLabels:Label[]=[];
-  doughnutChartData:SingleDataSet=[]
+  doughnutChartData:MultiDataSet=[]
   doughnutChartType:ChartType='doughnut'
   no_of_time_displayAns:number=0;
   ishidden:boolean=false;
@@ -202,15 +202,18 @@ export class QuizComponent implements OnInit {
   }
 
 
+
   onSubmit() {
 
     // console.log(this.correctans);
     // console.log(this.attempted);
-    this.doughnutChartLabels=['Correct Answers' , ' Incorrect Answers' , ' Unattempted'];
+    this.doughnutChartLabels=['Correct Answers' , ' Incorrect Answers' ,'Attempted' ,' Unattempted'];
     this.doughnutChartData=[
-    [this.correctans , (10-this.correctans) , (10-this.attempted) ]
-  ];
+      [0, 0 ,this.attempted, 10-this.attempted],
+    [this.correctans , (10-this.correctans), 0 ,0 ]
 
+  ];
+  this.config.duration=this.config.duration*20;
 
     this.mode = 'result';
   }

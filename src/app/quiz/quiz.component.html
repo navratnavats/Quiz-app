@@ -94,10 +94,10 @@
     <!-- Loop for result-questions -->
     <div *ngFor="let question of quiz.questions; let index = index">
       <div class="result-question">
-        <h5 id="question-name">{{index + 1}}) {{question.name}}</h5>
+        <h5 id="question-name ">{{index + 1}}) {{question.name}}</h5>
         <div class="row">
-          <div class="col-6" *ngFor="let Option of question.options">
-            <input id="{{Option.id}}" type="checkbox" disabled="disabled"  [(ngModel)]="Option.selected" /> {{Option.name}}
+          <div class="col-6 " *ngFor="let Option of question.options">
+            <input class="detail-options" id="{{Option.id}}" type="checkbox" disabled="disabled"  [(ngModel)]="Option.selected" /> {{Option.name}}
           </div>
         </div>
         <div class="p-1 m-2 alert {{ isCorrect(question) == 'correct'? 'alert-success': 'alert-danger'}}">Your answer is
@@ -200,3 +200,4 @@
 </div>
 
 </div>
+

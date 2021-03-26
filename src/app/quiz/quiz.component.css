@@ -18,6 +18,13 @@
 .top-cont h3{
   font-style: italic;
 }
+.detail-options
+{
+  margin-left: 5%;
+}
+h5{
+  margin-left: 2%;
+}
 .buttns{
   text-align: center;
 }
